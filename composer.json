@@ -3,6 +3,7 @@
     "description": "toastr.js for Laravel 5.* easy notification like growl for example",
     "keywords": ["toastr", "notification", "laravel", "php"],
     "homepage": "https://github.com/nilsenj/toastr-laravel",
+    "type":    "library",
     "license": "MIT",
     "authors": [
         {
@@ -14,20 +15,26 @@
             "email": "nikoleivan@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": ">=5.0.0",
         "illuminate/session": ">=5.0.0"
     },
+
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "nilsenj\\Toastr\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "nilsenj\\Toastr\\Tests\\": "tests/"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "master": "1.1.x-dev"
         }
     }
 }
