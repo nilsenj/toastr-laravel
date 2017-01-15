@@ -23,8 +23,8 @@ Easy [toastr.js](http://codeseven.github.io/toastr/) notifications for Laravel 5
 Installation
 ------------
 
-1. Either run `composer require nilsenj/toastr-laravel` 
-or add `"nilsenj/toastr-laravel": "dev-master"` to the `require` key in `composer.json` and run `composer install`
+1. Either run `composer require nilsenj/toastr-laravel dev-1.0-stable` 
+or add `"nilsenj/toastr-laravel": "dev-1.0-stable"` to the `require` key in `composer.json` and run `composer install`
 
 2. Add `'nilsenj\Toastr\ToastrServiceProvider',` to the `providers` key in `config/app.php`
 3. Add `'Toastr'          => 'nilsenj\Toastr\Facades\Toastr',` to the `aliases` key in `config/app.php`
