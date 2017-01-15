@@ -21,7 +21,7 @@ class Toastr {
     /**
      * Toastr config
      *
-     * @var Illuminate\Config\Repository
+     * @var Repository|Illuminate\Config\Repository
      */
     protected $config;
 
@@ -71,6 +71,7 @@ class Toastr {
         }
         $output .= '</script>';
 
+        $this->clear();
         return $output;
     }
 
@@ -96,6 +97,7 @@ class Toastr {
         ];
 
         $this->session->flash('toastr::notifications', $this->notifications);
+
     }
 
     /**
@@ -143,6 +145,7 @@ class Toastr {
      */
     public function clear() {
         $this->notifications = [];
+        $this->session->forget('toastr::notifications');
     }
 
 }

@@ -23,8 +23,8 @@ Easy [toastr.js](http://codeseven.github.io/toastr/) notifications for Laravel 5
 Installation
 ------------
 
-1. Either run `composer require nilsenj/toastr-laravel` 
-or add `"nilsenj/toastr-laravel": "dev-master"` to the `require` key in `composer.json` and run `composer install`
+1. Either run `composer require nilsenj/toastr-laravel dev-1.0-stable` 
+or add `"nilsenj/toastr-laravel": "dev-1.0-stable"` to the `require` key in `composer.json` and run `composer install`
 
 2. Add `'nilsenj\Toastr\ToastrServiceProvider',` to the `providers` key in `config/app.php`
 3. Add `'Toastr'          => 'nilsenj\Toastr\Facades\Toastr',` to the `aliases` key in `config/app.php`
@@ -47,7 +47,7 @@ You can use these methods in your controllers to insert a toast:
   - `Toastr::info($message, $title = null, $options = [])` - add an info toast
   - `Toastr::success($message, $title = null, $options = [])` - add a success toast
   - `Toastr::add($type: warning|error|info|success, $message, $title = null, $options = [])` - add a toast
-  - **`Toastr::clear()` - clear all current toasts** don't forget to use it
+  - **`Toastr::clear()` - clear all current toasts** for now it's always on
 
 ### Setting custom Toastr options
 
